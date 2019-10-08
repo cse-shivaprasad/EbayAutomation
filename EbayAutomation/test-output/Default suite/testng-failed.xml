@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
+    <classes>
+      <class name="ebay.qa.automation.ResultsStepDefinition"/>
+      <class name="ebay.qa.pom.EbayHomePageScenario002"/>
+      <class name="ebay.qa.util.HomePageUtil"/>
+      <class name="ebay.qa.pom.EbayHomePageScenario001"/>
+      <class name="ebay.qa.test.TestRunner"/>
+      <class name="ebay.qa.factory.BrowserFactory"/>
+      <class name="ebay.qa.pom.EbayHomePageScenario003"/>
+      <class name="ebay.qa.util.ScreenshotUtil"/>
+      <class name="ebay.qa.unittest.ResultsStepDefinition"/>
+      <class name="ebay.qa.constant.BrowserType"/>
+    </classes>
+  </test> <!-- Default test -->
+</suite> <!-- Failed suite [Default suite] -->

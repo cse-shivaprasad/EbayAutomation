@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="34.798366">
+<testcase classname="Search Results. Where one can sort, filter and see details of resulting products." name="Search and verify results" time="26.42638">
+<system-out><![CDATA[Given I am a non-registered customer And I navigate to www.ebay.co.uk in browser "chrome".passed
+When I search for an item "Kids Winter Wear"................................passed
+Then I get a list of matching results for item "Kids Winter Wear"...........passed
+Then Resulting items cards show: postage price, No of bids, price or show BuyItNow tag.passed
+Then I can sort the results by Lowest Price And the results are listed in the page in the correct order.passed
+Then I can sort the results by Highest Price And the results are listed in the page in the correct order.passed
+Then I can filter the results by 'Buy it now' And all the results shown in the page have the 'Buy it now' tag.passed
+]]></system-out>
+</testcase>
+<testcase classname="Search Results. Where one can sort, filter and see details of resulting products." name="Search and verify results 2" time="8.371986">
+<failure message="org.openqa.selenium.ElementNotVisibleException: element not interactable&#10;  (Session info: chrome=77.0.3865.90)&#10;  (Driver info: chromedriver=76.0.3809.12 (220b19a666554bdcac56dff9ffd44c300842c933-refs/branch-heads/3809@{#83}),platform=Mac OS X 10.14.6 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 14 milliseconds&#10;Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'&#10;System info: host: 'mbp1701.local', ip: '192.168.0.5', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_101'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:53722}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=76.0.3809.12 (220b19a666554bdcac56dff9ffd44c300842c933-refs/branch-heads/3809@{#83}), userDataDir=/var/folders/bx/qs79czkd7m74l9j840w30nxc0000gp/T/.com.google.Chrome.5MJpHV}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=77.0.3865.90, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: c1f0b8d516c0b2c35f8ac1bf3522ea44&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;&#9;at java.lang.reflect.Method.invoke(Method.java:498)&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)&#10;&#9;at com.sun.proxy.$Proxy15.click(Unknown Source)&#10;&#9;at ebay.qa.stepdefinitions.ResultStepDefinition.sortWithLowestPrice(ResultStepDefinition.java:84)&#10;&#9;at ✽.Then I can sort the results by Lowest Price And the results are listed in the page in the correct order(EbaySearchResults.feature:9)&#10;"><![CDATA[Given I am a non-registered customer And I navigate to www.ebay.co.uk in browser "chrome".passed
+When I search for an item "Mobiles".........................................passed
+Then I get a list of matching results for item "Mobiles"....................passed
+Then Resulting items cards show: postage price, No of bids, price or show BuyItNow tag.passed
+Then I can sort the results by Lowest Price And the results are listed in the page in the correct order.failed
+Then I can sort the results by Highest Price And the results are listed in the page in the correct order.skipped
+Then I can filter the results by 'Buy it now' And all the results shown in the page have the 'Buy it now' tag.skipped
+
+StackTrace:
+org.openqa.selenium.ElementNotVisibleException: element not interactable
+  (Session info: chrome=77.0.3865.90)
+  (Driver info: chromedriver=76.0.3809.12 (220b19a666554bdcac56dff9ffd44c300842c933-refs/branch-heads/3809@{#83}),platform=Mac OS X 10.14.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 14 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'mbp1701.local', ip: '192.168.0.5', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:53722}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=76.0.3809.12 (220b19a666554bdcac56dff9ffd44c300842c933-refs/branch-heads/3809@{#83}), userDataDir=/var/folders/bx/qs79czkd7m74l9j840w30nxc0000gp/T/.com.google.Chrome.5MJpHV}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=77.0.3865.90, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c1f0b8d516c0b2c35f8ac1bf3522ea44
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at ebay.qa.stepdefinitions.ResultStepDefinition.sortWithLowestPrice(ResultStepDefinition.java:84)
+	at ✽.Then I can sort the results by Lowest Price And the results are listed in the page in the correct order(EbaySearchResults.feature:9)
+]]></failure>
+</testcase>
+</testsuite>
